@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './widgets/category_widget.dart';
+
 void main() => runApp(MealApp());
 
 class MealApp extends StatelessWidget {
@@ -28,7 +30,10 @@ class HomePageState extends State<_HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appbar,
-      body: Container(),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: CategoryWidget(),
+      ),
     );
   }
 }
